@@ -1,0 +1,141 @@
+<!-- 
+Página Web diseñada para la evaluacion de Lenguajes de Internet
+Primer Parcial por el profesor Garcia Espinosa Luis Antonio
+
+Autor: Rodríguez García Jose Luis
+Instituto Politécnico Nacional - Esime Zacatenco 
+Carrera: ICE especialidad Computación
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+	Link a la pagina de estilo externa de CSS 
+	-->	
+  		<link rel="stylesheet" href="estilo.css">
+
+	<meta name="description" content="La otra cara de la música Japonesa">
+ 	<meta name="keywords" content="Musica, Nujabes, Blog">
+  	<meta name="author" content="Rodriguez Garcia Jose Luis">
+  	<meta charset="UTF-8">
+	<title>Nujabes - La otra cara de la música Japonesa</title>
+
+<!-- 
+	Ejemplo de uso de "Internal CSS" para fines didacticos 
+-->	
+
+<style>
+
+#cancion2{
+	padding: 0 0 0 12px;
+}
+
+.center {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#boton2{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+#boton2:hover{
+	background-image: none;
+}
+
+</style>
+
+</head>
+
+<body>
+	<div id="encabezado">
+		<h1 style="float: left">Nujabes</h2>
+	</div>
+
+	<!-- menú en desarrollo -->
+	<div id="menu">
+		<a href="mainN.html" class="artista" id="boton1">Nujabes</a>
+		<a class="artista" id="boton2">coming soon</a>
+	</div>
+
+	<!-- Contenido -->
+	<h1 style="font-family: 'Times New Roman', Georgia, serif"> La otra cara de la música Japonesa  </h1>
+	<p>
+		Se suele relacionar a la música Japonesa con los denominados J-Pop o J-Rock, igualmente a la música folklorica japonesa pero desde los años 80s se ha dado un 
+		surgimiento importante en artistas de distintos géneros los cuales incluyen el Jazz, Neo-Clasico, Hip-Hop, Hard Rock, entre otros.<br><br> En el <i>spotlight</i>
+		 de está vez tenemos a un artista bastante influyente que surgio a finales de los 90s, el compositor y DJ Japones Seba Jun, también conocido como <b>Nujabes</b>.
+	</p>
+		<img src="images/nujabes2.jpg" class="center">
+	<p>
+		  Tomando inspiración de la escena del Hip Hop instrumental con DJ Shadow y DJ Krush, las producciones de Nujabes pronto obtuvieron un sonido unico que lo 
+		  colocó como uno de los DJ más importantes en Japon en su momento.
+		  <br>En sus canciones escuchamos, siempre, un inconfundible carácter de música underground, con fuertes influencias de distintas épocas,
+		  	  especialmente de la escena americana del hip hop de los 90, así como de los clásicos del jazz y el soul.
+	</p>
+		<img src="images/nujabes3.jpg" class="center">
+
+	<!-- Disclaimer -->		
+	<div class="disclaimer">
+		<p class="disclaimer">
+				Se sustituyeron las canciones de Nujabes por musica de uso libre para evitar cualquier problema relacionado con copyright
+		</p>	
+	</div>
+
+	<!-- Formulario -->
+	<h2 style="padding-left: 42px">Encuesta al usuario</h2>
+
+	<!-- link a una pagina con una animacion porque no usamos script-->
+	<form action="animacion_completado.html" target="iframecompletado">
+
+	  <fieldset>
+		<legend>Datos Personales</legend>
+		<p class="encuesta">
+		  <label>Nombre</label>
+		  <input type="text" id="nombre" name="nombre" required>
+		</p>
+		<p class="encuesta" align="left">
+  	  	<label>¿De los siguientes géneros musicales cuál te gusta más?</label>
+  	  	<select>
+  	  	  <option value="#ff0000"> Hip-Hop/Rap </option>
+  	  	  <option value="#00ff00"> Electronica </option>
+  	  	  <option value="#0000ff"> Rock </option>
+  	  	  <option value="#0000ff"> Pop </option>
+		  <option value="#0000ff"> Dubstep </option>
+  	  	  <option value="#00ffff"> Unos Cumbiones bien locoshones </option>
+  	  	</select> 
+  	    </p>  	  
+  	  	<legend>¿Qué te parecio la música de Nujabes?</legend>
+  	 	<p class="encuesta">
+  	    <textarea name="feedback" id="feedback" rows="8" cols="52"></textarea>
+  	    </p>
+  	    <input type="submit" value="completado" name="completado">
+  	  </fieldset>
+	</form>
+
+	<!-- link a una pagina con una animacion porque no usamos script-->
+	<iframe src="about:blank" name="iframecompletado" style="border: 0;"></iframe>
+
+	<!-- Canciones de prueba -->
+	<div class="media">
+			<audio id="cancion1" preload="auto" controls autoplay style="float: left;"> 
+				<!-- el atributo autoplay tiene problemas en reproducir archivos
+				de audio grandes, Chrome, Edge y Opera ignoran este atributo -->
+			  <source src="audio/例maoudamashii-healing15.ogg" type="audio/ogg">
+			  <source src="audio/maoudamashii-healing15.mp3" type="audio/mp3">
+			  Archivo de audio no encontrado o no soportado por el navegador
+			</audio>
+			<audio id="cancion2" style="float: left;" controls>
+			  <source src="audio/maou_bgm_healing03.ogg" type="audio/ogg">
+			  <source src="audio/maou_bgm_healing03.mp3" type="audio/mp3">
+			  Archivo de audio no encontrado o no soportado por el navegador
+			</audio>	
+				<!-- Se usaron dos reproductores de audio para demostrar que se puede reproducir más de una pista al mismo tiempo	-->
+	</div>
+
+</body>
+</html>
