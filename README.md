@@ -1,25 +1,28 @@
 # WebPagefromScratch2
 [es]
 
-Una Página hecha desde cero en HTML5 y CSS
+<h3> Una Página hecha desde cero en HTML5 y CSS </h3>
 
+<p>
 Lo que aprendí:
-• Estructura básica de una página web
-• Diseño con CSS
-• Insertar Media (imagen, audio, video)
-• Manejo de espacios
-• Creación de Listas
-• Creación de Menú
-
+• Estructura básica de una página web   <br>
+• Diseño con CSS   <br>
+• Insertar Media (imagen, audio, video)   <br>
+• Manejo de espacios   <br>
+• Creación de Listas   <br>
+• Creación de Menú   <br>
+</p>
 --------------
 [en]
 
-A page made from scratch using HTML5 and CSS
+<h3> A page made from scratch using HTML5 and CSS </h3>
 
+<p>
 What I learned:
-• Basic structure of a Webpage
-• Design with CSS
-• Usage of Media (image, audio, video)
-• Margins and spaces
-• Making lists
-• Making a Menu
+• Basic structure of a Webpage   <br>
+• Design with CSS   <br>
+• Usage of Media (image, audio, video)   <br>
+• Margins and spaces   <br>
+• Making lists   <br>
+• Making a Menu   <br>
+</p>
