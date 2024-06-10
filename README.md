@@ -12,7 +12,7 @@ Lo que aprendí:   <br>
 • Creación de Listas   <br>
 • Creación de Menú   <br>
 </p>
---------------
+--------------   <br>
 [en]
 
 <h3> A page made from scratch using HTML5 and CSS </h3>
